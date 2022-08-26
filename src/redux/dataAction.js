@@ -1,4 +1,4 @@
-import { DATA_LIST  } from "./constant";
+import { DATA_LIST ,CATEGORY_DATA_FIND } from "./constant";
 
 //  get call to fetech data through saga
 export const dataList = () => {
@@ -7,3 +7,9 @@ export const dataList = () => {
   };
 };
 
+export const categoryDataFind = (query) => {
+  return {
+    type: CATEGORY_DATA_FIND,
+    query
+  };
+};
